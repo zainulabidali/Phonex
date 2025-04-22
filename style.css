@@ -1019,3 +1019,74 @@ figure.instagram-item img.insta-image {
 .post-navigation:focus svg {
     fill: var(--primary-color);
 }
+
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  text-align: center;
+  padding: 2rem;
+  background-color: #f9f9f9;
+}
+
+.feature-box {
+  width: 30%;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.feature-box:hover {
+  transform: translateY(-5px);
+}
+
+.feature-box img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 1rem;
+}
+
+.feature-box h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+  color: #333;
+  text-transform: uppercase;
+}
+
+.feature-box p {
+  font-size: 0.95rem;
+  color: #555;
+  margin: 0.3rem 0;
+}
+
+.feature-box a {
+  color: #e76f51;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 0.8rem;
+}
+/* Animation for zoom-in effect */
+@keyframes zoomIn {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: zoomIn 1s ease-out;
+}
+/* Hover effect for zoom-in */
+.fade-in:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
